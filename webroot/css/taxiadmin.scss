@@ -1,0 +1,133 @@
+/*
+    Created on : 2016-dec-07, 12:19:51
+    Author     : peder
+*/
+
+/* föraradministration */
+#calendar_heading{
+    float: left ;
+    background: darkseagreen;
+    min-height: 4em;
+    width: 100%;
+}
+
+#form-cab {
+    display: block;
+    overflow: scroll;
+    margin-top: 1em
+}
+
+.driver-form-row, .driver-form-label, driver-form-field,
+.cab-form-row, .cab-form-label, cab-form-field{
+    float: left;
+}
+
+.driver-form-row, .cab-form-row, .cab-form-content, .cal-form-row{
+    float:left;
+    min-width: 100%;
+    max-width: 100%;
+}
+.cab-form-block{
+    float: left;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+
+.driver-form-label, .cab-form-label{
+    min-width: 7em;
+
+}
+
+.cal-date-name-field,.pass, .pass-rubrik, cal-border{
+    box-sizing: border-box;
+    min-height: 1.45rem;
+    max-height: 1.45rem;
+    padding-top: 0.3rem;
+}
+
+.driver-form-field, .cab-form-field{
+    float: left;
+    min-width: 20rem
+}
+.cab-pass-row{
+    float:left;
+    min-width: 10rem;
+    max-width: 10rem;
+
+}
+.pass, .pass-rubrik{
+    float:left;
+    min-width: 4rem;
+    max-width: 4rem;
+    text-align: center;
+}
+.pass, .pass-rubrik, cal-border{
+    border: 1px solid darkgrey;
+}
+.pass-rubrik{
+    font-weight: bold;
+}
+.cal_sub_heading{
+    background: lightsteelblue;
+}
+
+#calendar{
+    float:left;
+    width: 100%;
+    border-style: solid;
+    border-width: 1px 1px;
+}
+
+.cal-date-name-field{
+    float: left;
+    min-width: 1.5rem;
+    max-width: 1.5rem;
+    padding-left: 0.3rem;
+    font-weight: bold;
+}
+.cal-date-name-field_sun{
+    border-bottom:  1px solid darkgrey;
+}
+.cal-date-name-field_mon{
+    border-top: 1px solid darkgrey;
+}
+
+.bil-rubrik, .bil-rubrik-tid{
+    float: left;
+    height: 20px;
+    max-width: 8rem;
+    min-width: 8rem;
+    padding-top: 0.3rem;
+    text-align: center;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.calendarpost, .cal-date-name-field{
+    font-size: 90%;
+}
+
+.hidden_element{
+    display: none;
+}
+.sunday{
+    color: red;
+}
+.monday{
+    border-top: 1px solid darkgrey;
+}
+.free-day{
+    background-color:  palegreen;
+}
+.post-in-focus{
+    background-color: gainsboro;
+}
+
+.tooltip {;
+          padding: 0.5rem;
+          background-color: white;
+          border: 1px solid rgb(195,151,51);
+          border-radius : 5px;
+          font-size: 80%;
+}

@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "normalize.min.css";
+body {
+  background-color: #bababa;
+  color: #333;
+  font-size: 12px;
+}
+
+.button {
+  color: #333;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  display: inline-block;
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.blue-button {
+  color: #010101;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=style.min.css.map */

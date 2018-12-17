@@ -1,0 +1,163 @@
+ @import "menuMobil.scss";
+
+html {
+    height: 100%;
+}
+
+body {
+  background-color: $wrapperBackgroundColor;
+  color: $bodyColor;
+  font-size: $bodyFontSize;
+  height: 100%;
+  overflow: hidden;
+}
+
+fieldset {
+    border: none;
+}
+
+#wrapper, #header, #byline, #footer, #content, #main{
+  width: 100%;
+  overflow: hidden;
+}
+
+#main {
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+#content{
+    margin: 0 1em;
+}
+
+#wrapper {
+  /*padding: 0.7em;*/
+  background-color: $wrapperBackgroundColor;
+  overflow: auto;
+  height: calc(100% - 2em);
+  flex-direction: column;
+}
+
+#header {
+    height: auto;
+    background-image: url('../img/headerMobil.jpg');
+}
+
+#content {
+    overflow:scroll;
+    margin-bottom: 50px;
+}
+
+#footer {
+    display: none;
+}
+
+.text {
+    padding: 0 $padding-content-mobile;
+}
+.pagemenu{
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap:  nowrap;
+    justify-content: space-evenly;
+}
+
+
+.button {
+    color: #333;
+    width: 100%;
+    background-color:#d9ffb3;
+    border: 1px solid #f2f2f2;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.blue-button {
+    color: $text-buttons;
+    background-color: $back-blue-butt;
+}
+
+#method-nav,
+.bottom-nav {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background: #EEE;
+    border: 0px;
+    border-top: 1px;
+    border-style: solid;;
+    border-color: #333;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+}
+
+.container {
+    padding: 0.8rem;
+}
+.container img {
+    width: 100%;
+}
+
+.bottom-nav {
+    color: #555;
+    padding: 0.6rem 0rem 0.3rem;
+}
+
+.bottom-nav .active {
+    color: blue;
+}
+
+.bottom-nav li {
+    text-align: center;
+}
+
+.bottom-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: .8em;
+
+}
+
+.bottom-nav i {
+    display: block;
+    line-height: 0.8em;
+}
+
+.bottom-nav span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.6rem;
+}
+
+.icon-text {
+    line-height: 0.8em;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: .4rem;
+}
+
+.input-label {
+    padding-top: 0;
+    padding-bottom: .5em;
+    padding-left: .7em;
+}
+
+.fieldset-driver-data {
+    padding-top: 0;
+    padding-bottom: 0;
+}

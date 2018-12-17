@@ -1,0 +1,617 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import "normalize.min.css";
+/*
+    Created on : 2016-dec-07, 12:19:51
+    Author     : peder
+*/
+/* föraradministration */
+
+#calendar_heading {
+  float: left;
+  background: darkseagreen;
+  min-height: 4em;
+  width: 100%;
+}
+
+#form-cab {
+  display: block;
+  min-width: 400px;
+  overflow: scroll;
+}
+
+.driver-form-row, .driver-form-label, driver-form-field,
+.cab-form-row, .cab-form-label, cab-form-field {
+  float: left;
+}
+
+.driver-form-row, .cab-form-row, .cab-form-content, .cal-form-row {
+  float: left;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.cab-form-block {
+  float: left;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.driver-form-label, .cab-form-label {
+  min-width: 7em;
+}
+
+.cal-date-name-field, .pass, .pass-rubrik, cal-border {
+  box-sizing: border-box;
+  min-height: 1.45rem;
+  max-height: 1.45rem;
+  padding-top: 0.3rem;
+}
+
+.driver-form-field, .cab-form-field {
+  float: left;
+  min-width: 20rem;
+}
+
+.cab-pass-row {
+  float: left;
+  min-width: 10rem;
+  max-width: 10rem;
+}
+
+.pass, .pass-rubrik {
+  float: left;
+  min-width: 4rem;
+  max-width: 4rem;
+  text-align: center;
+}
+
+.pass, .pass-rubrik, cal-border {
+  border: 1px solid darkgrey;
+}
+
+.pass-rubrik {
+  font-weight: bold;
+}
+
+.cal_sub_heading {
+  background: lightsteelblue;
+}
+
+#calendar {
+  float: left;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px 1px;
+}
+
+.cal-date-name-field {
+  float: left;
+  min-width: 1.5rem;
+  max-width: 1.5rem;
+  padding-left: 0.3rem;
+  font-weight: bold;
+}
+
+.cal-date-name-field_sun {
+  border-bottom: 1px solid darkgrey;
+}
+
+.cal-date-name-field_mon {
+  border-top: 1px solid darkgrey;
+}
+
+.bil-rubrik, .bil-rubrik-tid {
+  float: left;
+  height: 20px;
+  max-width: 8rem;
+  min-width: 8rem;
+  padding-top: 0.3rem;
+  text-align: center;
+  font-size: 130%;
+  font-weight: bold;
+}
+
+.calendarpost, .cal-date-name-field {
+  font-size: 90%;
+}
+
+.hidden_element {
+  display: none;
+}
+
+.sunday {
+  color: red;
+}
+
+.monday {
+  border-top: 1px solid darkgrey;
+}
+
+.free-day {
+  background-color: palegreen;
+}
+
+.post-in-focus {
+  background-color: gainsboro;
+}
+
+.tooltip {
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid #c39733;
+  border-radius: 5px;
+  font-size: 80%;
+}
+
+body {
+  background-color: #bababa;
+  color: #333;
+  font-size: 12px;
+}
+
+legend {
+  padding: 1em;
+}
+
+fieldset {
+  padding: 1.4em 0.75em 0.625em;
+}
+
+select {
+  background-color: white;
+}
+
+#wrapper, #header, #byline, #footer, #content, #main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#wrapper {
+  /*padding: 0.7em;*/
+  background-color: #f3f3f3;
+}
+
+#header {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#headerImg {
+  width: 100%;
+  height: auto;
+}
+
+#footer {
+  min-height: 5em;
+  padding: 1em 2em;
+}
+
+.button {
+  color: #333;
+  background-color: #fff;
+  background-image: linear-gradient(#fff, #eee);
+  border: 1px solid #ccc;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em;
+  padding: 0.4rem 1rem;
+  text-align: center;
+  border-radius: 0.2rem;
+  line-height: 1.4;
+  min-width: 10em;
+}
+
+.button:hover {
+  background-color: #ddd;
+  background-image: none;
+}
+
+.button:active {
+  background-color: #dcdcdc;
+  background-image: none;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.input {
+  font-size: 12px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 0.2rem;
+  padding: 0.6rem 0.6rem;
+  box-sizing: border-box;
+  width: 32rem;
+  margin-bottom: 0.4rem;
+}
+
+.input-label {
+  box-sizing: border-box;
+  font-weight: bold;
+  padding-top: 1em;
+  display: block;
+}
+
+.select-driver {
+  border: none;
+}
+
+.form_field {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.form_elements {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+.form_date_string {
+  float: left;
+  margin: 0.5rem 0 1rem 9rem;
+}
+
+.form_date {
+  float: left;
+  min-width: 8.5rem;
+}
+
+@media only screen and (min-width: 601px) {
+  /**
+   * Based on http://dbwebb.se/coachen/en-pagemenu-med-drop-down-meny-i-ren-html-och-css
+   * Changed to only style li-items instead of a.
+   */
+  .pagemenu {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    max-height: 2em;
+    min-width: 73%;
+    margin: 0;
+    margin-top: 3.3em;
+    padding: 1em 1em 1px 1em;
+    border: 0;
+    border-bottom: 2px solid #999999;
+    font-size: 14px;
+  }
+
+  .pagemenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagemenu li {
+    display: inline-block;
+    color: #333;
+    color: #555555;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .pagemenu a {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    text-decoration: none;
+    color: #555555;
+    white-space: nowrap;
+  }
+
+  .pagemenu li:hover {
+    color: #666;
+    background: #999999;
+  }
+
+  .pagemenu li.selected-parent,
+.pagemenu li.selected,
+.pagemenu li li.selected {
+    color: #22f;
+    background: #cdcdcd;
+  }
+
+  .pagemenu ul ul {
+    background-color: #f9f9f9;
+    padding: 8px;
+    position: absolute;
+    left: -9999px;
+    z-index: 2;
+  }
+
+  .pagemenu li li {
+    border-top: none;
+  }
+
+  .pagemenu li:hover ul {
+    left: 0;
+  }
+
+  .pagemenu li li:hover {
+    color: #666;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  #wrapper, #header, #byline, #footer, #content, #main {
+    float: none;
+    max-width: 81.667em;
+    min-width: 81.667em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #header {
+    height: 240px;
+    background-image: url("../img/header.jpg");
+  }
+
+  .sitetitle {
+    font-size: 3em;
+    margin-top: 3.8em;
+    width: 71%;
+    color: #fcfde6;
+  }
+
+  .siteslogan {
+    font-style: italic;
+    font-size: 1.5em;
+    color: #fcfde6;
+    width: 71%;
+  }
+
+  .sitelogo {
+    max-width: 16em;
+    max-height: 18em;
+    margin: 0.8em;
+    margin-top: 8em;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /**
+   * Based on http://dbwebb.se/coachen/en-pagemenu-med-drop-down-meny-i-ren-html-och-css
+   * Changed to only style li-items instead of a.
+   */
+  .pagemenu {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    max-height: 2em;
+    min-width: 73%;
+    margin: 0;
+    margin-top: 3.3em;
+    padding: 1em 1em 4px 1em;
+    border: 0;
+    border-bottom: 2px solid #999999;
+    font-size: 14px;
+  }
+
+  .pagemenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .pagemenu li {
+    display: inline-block;
+    color: #333;
+    color: #555555;
+    font-family: Tahoma, Geneva, sans-serif;
+    text-decoration: none;
+    position: relative;
+  }
+
+  .pagemenu a {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    text-decoration: none;
+    color: #555555;
+    white-space: nowrap;
+  }
+
+  .pagemenu li:hover {
+    color: #666;
+    background: #999999;
+  }
+
+  .pagemenu li.selected-parent,
+.pagemenu li.selected,
+.pagemenu li li.selected {
+    color: #22f;
+    background: #cdcdcd;
+  }
+
+  .pagemenu ul ul {
+    background-color: #f9f9f9;
+    padding: 8px;
+    position: absolute;
+    left: -9999px;
+    z-index: 2;
+  }
+
+  .pagemenu li li {
+    border-top: none;
+  }
+
+  .pagemenu li:hover ul {
+    left: 0;
+  }
+
+  .pagemenu li li:hover {
+    color: #666;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-color: #f3f3f3;
+    color: #333;
+    font-size: 12px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  #wrapper, #header, #byline, #footer, #content, #main {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #main {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  #wrapper {
+    /*padding: 0.7em;*/
+    background-color: #f3f3f3;
+    overflow: hidden;
+    height: calc(100% - 2em);
+    flex-direction: column;
+  }
+
+  #header {
+    height: auto;
+    background-image: url("../img/headerMobil.jpg");
+  }
+
+  #content {
+    overflow: scroll;
+    margin-bottom: 50px;
+  }
+
+  #footer {
+    display: none;
+  }
+
+  .text {
+    padding: 0 0.4em;
+  }
+
+  .pagemenu {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+
+  .button {
+    color: #333;
+    width: 100%;
+    background-color: #d9ffb3;
+    border: 1px solid #f2f2f2;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1rem;
+    padding: 0.2rem 0.7rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .blue-button {
+    color: #010101;
+    background-color: #80dfff;
+  }
+
+  #method-nav,
+.bottom-nav {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    background: #EEE;
+    border: 0px;
+    border-top: 1px;
+    border-style: solid;
+    border-color: #333;
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+  }
+
+  .container {
+    padding: 0.8rem;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .bottom-nav {
+    color: #555;
+    padding: 0.6rem 0rem 0.3rem;
+  }
+
+  .bottom-nav .active {
+    color: blue;
+  }
+
+  .bottom-nav li {
+    text-align: center;
+  }
+
+  .bottom-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8em;
+  }
+
+  .bottom-nav i {
+    display: block;
+    line-height: 0.8em;
+  }
+
+  .bottom-nav span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.6rem;
+  }
+
+  .icon-text {
+    line-height: 0.8em;
+  }
+
+  .input {
+    width: 100%;
+    margin-bottom: 0.4rem;
+  }
+
+  .input-label {
+    padding-top: 0;
+    padding-bottom: 0.5em;
+    padding-left: 0.7em;
+  }
+
+  .fieldset-driver-data {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

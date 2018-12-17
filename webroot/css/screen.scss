@@ -1,0 +1,33 @@
+ @import "menu.scss";
+
+#wrapper, #header, #byline, #footer, #content, #main{
+  float: none;
+  max-width: 81.667em;
+  min-width: 81.667em;
+}
+
+#header {
+  height: 240px;
+  background-image: url('../img/header.jpg');
+}
+
+.sitetitle {
+  font-size: 3em;
+  margin-top: 3.8em;
+  width: 71%;
+  color: #fcfde6;
+}
+
+.siteslogan {
+  font-style: italic;
+  font-size: 1.5em;
+  color: #fcfde6;
+  width: 71%;
+}
+.sitelogo{
+    max-width: 16em;
+    max-height: 18em;
+    margin: 0.8em;
+    margin-top: 8em;
+    overflow: hidden;
+}

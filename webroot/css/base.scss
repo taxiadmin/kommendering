@@ -1,0 +1,150 @@
+// fonts
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+
+// reset
+@import "normalize.min.css";
+@import "variables.scss";
+@import "taxiadmin.scss";
+@import "driverShema.scss"
+
+body {
+  background-color: $bodyBackgroundColor;
+  color: $bodyColor;
+  font-size: $bodyFontSize;
+}
+
+legend{
+    padding: 1em;
+}
+
+fieldset {
+    padding: 1.4em 0.75em 0.625em;
+}
+
+select{
+    background-color: white;
+}
+
+*{
+    box-sizing: border-box;
+}
+#wrapper, #header, #byline, #footer, #content, #main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#content{
+    margin: 0 1em;
+}
+
+#wrapper {
+  /*padding: 0.7em;*/
+  background-color: $wrapperBackgroundColor;
+}
+
+#header {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#headerImg {
+    width: 100%;
+    height: auto;
+}
+
+#footer {
+    min-height: 5em;
+    padding: 1em 2em;
+}
+
+#pagemenu {
+    min-height: 4em;
+}
+.button {
+    color: #333;
+    background-color: #fff;
+    background-image: linear-gradient(#fff, #eee);
+    border: 1px solid #ccc;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1em;
+    padding: 0.4rem 1rem;
+    text-align: center;
+    border-radius: 0.2rem;
+    line-height: 1.4;
+    min-width: 10em;
+}
+
+.button:hover {
+    background-color: #ddd;
+    background-image: none;
+}
+
+.cal-form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.button:active {
+    background-color: #dcdcdc;
+    background-image: none;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.input {
+    font-size: $bodyFontSize;
+    //line-height: $line-height;
+    //font-family: $font-body;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 0.2rem;
+    padding: 0.6rem 0.6rem;
+    box-sizing: border-box;
+    width: 32rem;
+    margin-bottom: .4rem;
+}
+
+.input-label {
+    box-sizing: border-box;
+    font-weight: bold;
+    padding-top: 1em;
+    display: block;
+}
+
+.select-driver {
+    border: none;
+}
+.form_field{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+.form_elements{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+.form_date_string{
+    float: left;
+    margin: 0.5rem 0 1rem 9rem;
+
+}
+.form_date{
+    float: left;
+    min-width: 8.5rem;
+}
+
+
+@media only screen and (min-width: 601px) {
+    @import "screen.scss";
+}
+@media only screen and (max-width: 600px) {
+    @import "mobile.scss";
+}

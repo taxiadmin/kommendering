@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html class='no-js' lang="sv">
+    <head>
+        <meta charset='utf-8'/>
+        <title>Planering</title>
+        <link rel='stylesheet' type='text/css' href='webroot/css/style.css'/>
+        <link rel='stylesheet' type='text/css' href='webroot/css/old.css'/>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+        <script src='webroot/js/jquery/jquery.ui.timepicker.js'></script>
+        <script src='webroot/js/jquery/include/ui-1.10.0/jquery.ui.core.min.js'></script>
+        <script src='webroot/js/taxi_js.js'></script>
+        <script src='js/modernizr.js'></script></head>
+    <body>
+        <div id='wrapper'>
+            <div id='header'>
+                <img class='sitelogo left' src=' webroot/img/logo.jpg' alt=''/>
+                <div class='sitetitle left'>Planering</div>
+                <div class='siteslogan left'>Planera bilar</div>
+
+                <nav class='pagemenu'>
+                    <ul>
+                        <li><a href='start' title='Hem'>Hem</a></li>
+
+                        <li><a href='driver' title='Föraradministration'>Förare</a></li>
+
+                        <li><a href='cab' title='Biladministration'>Bilar</a></li>
+
+                        <li><a href='calendar' title='Planera bilar'>Planering</a></li>
+
+                        <li><a href='login' title='Login'>Login</a></li>
+                    </ul>
+                </nav>
+            </div><!-- header -->
+            <div id='main'>
+                <div id='content'>
+                    <div id='form-cab'>
+                        <div class='cab-form-row'>
+                            <div id='calendar'>
+                                <div id= 'calendar_heading'>
+                                    <div class='rubrik'>
+                                        <div id='calendar_heading_date'>
+                                            <span class='prev_month left'>
+                                                <a href="?txi_date=2016-11-30">&laquo;</a>
+                                            </span>
+                                            <span class='left'>
+                                                December2016
+                                            </span>
+                                            <span class='next_month left'>
+                                                <a href="?txi_date=2017-01-01">&raquo;</a></span>
+                                        </div><!-- #calendar_heading_date -->
+                                    </div><!-- .rubrik -->
+                                </div><!-- #calendar_heading -->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                    </div>
+                                    <div class='bil'>
+                                        820
+                                    </div><div class='bil'>
+                                        822
+                                    </div>                                        
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                    </div>
+                                    <div class='pass'>
+                                        Dag
+                                    </div>
+                                    <div class='pass'>
+                                        Natt
+                                    </div>
+                                    <div class='pass'>
+                                        Dag
+                                    </div>
+                                    <div class='pass'>
+                                        Natt
+                                    </div>
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Ti
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        1
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1227' calendar-time='03:00:00-12:00:00 calendar-type='1227'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1258' calendar-time='15:00:00-03:00:00 calendar-type='1258'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1413' calendar-time='03:00:00-15:00:00 calendar-type='1413'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1444' calendar-time='15:00:00-03:00:00 calendar-type='1444'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        On
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        2
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1228' calendar-time='02:00:00-08:00:00 calendar-type='1228'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1259' calendar-time='09:00:00-03:00:00 calendar-type='1259'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1414' calendar-time='03:00:00-18:00:00 calendar-type='1414'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1445' calendar-time='18:00:00-05:00:00 calendar-type='1445'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        To
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        3
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1229' calendar-time='04:00:00-15:00:00 calendar-type='1229'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1260' calendar-time='13:00:00-15:00:00 calendar-type='1260'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1415' calendar-time='05:00:00-17:00:00 calendar-type='1415'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1446' calendar-time='17:00:00-05:00:00 calendar-type='1446'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Fr
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        4
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1230' calendar-time='04:00:00-16:00:00 calendar-type='1230'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1261' calendar-time='16:00:00-03:00:00 calendar-type='1261'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1416' calendar-time='05:00:00-17:00:00 calendar-type='1416'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1447' calendar-time='17:00:00-03:00:00 calendar-type='1447'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        L&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        5
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1231' calendar-time='03:00:00-03:00:00 calendar-type='1231'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1262' calendar-time='15:00:00-03:00:00 calendar-type='1262'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1417' calendar-time='03:00:00-15:00:00 calendar-type='1417'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1448' calendar-time='15:00:00-03:00:00 calendar-type='1448'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        S&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        6
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1232' calendar-time='04:00:00-16:00:00 calendar-type='1232'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1263' calendar-time='16:00:00-04:00:00 calendar-type='1263'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1418' calendar-time='03:00:00-15:00:00 calendar-type='1418'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1449' calendar-time='15:00:00-03:00:00 calendar-type='1449'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        M&aring;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        7
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1233' calendar-time='03:00:00-00:00:00 calendar-type='1233'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1264' calendar-time='17:00:00-04:00:00 calendar-type='1264'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1419' calendar-time='03:00:00-15:00:00 calendar-type='1419'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1450' calendar-time='15:00:00-03:00:00 calendar-type='1450'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Ti
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        8
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1234' calendar-time='03:00:00-12:00:00 calendar-type='1234'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1265' calendar-time='15:00:00-03:00:00 calendar-type='1265'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1420' calendar-time='03:00:00-15:00:00 calendar-type='1420'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1451' calendar-time='15:00:00-03:00:00 calendar-type='1451'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        On
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        9
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1235' calendar-time='02:00:00-08:00:00 calendar-type='1235'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1266' calendar-time='09:00:00-03:00:00 calendar-type='1266'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1421' calendar-time='03:00:00-18:00:00 calendar-type='1421'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1452' calendar-time='18:00:00-05:00:00 calendar-type='1452'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        To
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        10
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1236' calendar-time='04:00:00-15:00:00 calendar-type='1236'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1267' calendar-time='13:00:00-15:00:00 calendar-type='1267'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1422' calendar-time='05:00:00-17:00:00 calendar-type='1422'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1453' calendar-time='17:00:00-05:00:00 calendar-type='1453'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Fr
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        11
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1237' calendar-time='04:00:00-16:00:00 calendar-type='1237'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1268' calendar-time='16:00:00-03:00:00 calendar-type='1268'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1423' calendar-time='05:00:00-17:00:00 calendar-type='1423'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1454' calendar-time='17:00:00-03:00:00 calendar-type='1454'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        L&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        12
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1238' calendar-time='03:00:00-03:00:00 calendar-type='1238'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1269' calendar-time='15:00:00-03:00:00 calendar-type='1269'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1424' calendar-time='03:00:00-15:00:00 calendar-type='1424'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1455' calendar-time='15:00:00-03:00:00 calendar-type='1455'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        S&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        13
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1239' calendar-time='04:00:00-16:00:00 calendar-type='1239'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1270' calendar-time='16:00:00-04:00:00 calendar-type='1270'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1425' calendar-time='03:00:00-15:00:00 calendar-type='1425'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1456' calendar-time='15:00:00-03:00:00 calendar-type='1456'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        M&aring;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        14
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1240' calendar-time='03:00:00-00:00:00 calendar-type='1240'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1271' calendar-time='17:00:00-04:00:00 calendar-type='1271'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1426' calendar-time='03:00:00-15:00:00 calendar-type='1426'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1457' calendar-time='15:00:00-03:00:00 calendar-type='1457'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Ti
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        15
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1241' calendar-time='03:00:00-12:00:00 calendar-type='1241'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1272' calendar-time='15:00:00-03:00:00 calendar-type='1272'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1427' calendar-time='03:00:00-15:00:00 calendar-type='1427'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1458' calendar-time='15:00:00-03:00:00 calendar-type='1458'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        On
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        16
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1242' calendar-time='02:00:00-08:00:00 calendar-type='1242'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1273' calendar-time='09:00:00-03:00:00 calendar-type='1273'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1428' calendar-time='03:00:00-18:00:00 calendar-type='1428'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1459' calendar-time='18:00:00-05:00:00 calendar-type='1459'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        To
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        17
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1243' calendar-time='04:00:00-15:00:00 calendar-type='1243'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1274' calendar-time='13:00:00-15:00:00 calendar-type='1274'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1429' calendar-time='05:00:00-17:00:00 calendar-type='1429'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1460' calendar-time='17:00:00-05:00:00 calendar-type='1460'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Fr
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        18
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1244' calendar-time='04:00:00-16:00:00 calendar-type='1244'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1275' calendar-time='16:00:00-03:00:00 calendar-type='1275'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1430' calendar-time='05:00:00-17:00:00 calendar-type='1430'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1461' calendar-time='17:00:00-03:00:00 calendar-type='1461'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        L&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        19
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1245' calendar-time='03:00:00-03:00:00 calendar-type='1245'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1276' calendar-time='15:00:00-03:00:00 calendar-type='1276'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1431' calendar-time='03:00:00-15:00:00 calendar-type='1431'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1462' calendar-time='15:00:00-03:00:00 calendar-type='1462'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        S&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        20
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1246' calendar-time='04:00:00-16:00:00 calendar-type='1246'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1277' calendar-time='16:00:00-04:00:00 calendar-type='1277'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1432' calendar-time='03:00:00-15:00:00 calendar-type='1432'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1463' calendar-time='15:00:00-03:00:00 calendar-type='1463'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        M&aring;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        21
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1247' calendar-time='03:00:00-00:00:00 calendar-type='1247'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1278' calendar-time='17:00:00-04:00:00 calendar-type='1278'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1433' calendar-time='03:00:00-15:00:00 calendar-type='1433'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1464' calendar-time='15:00:00-03:00:00 calendar-type='1464'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Ti
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        22
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1248' calendar-time='03:00:00-12:00:00 calendar-type='1248'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1279' calendar-time='15:00:00-03:00:00 calendar-type='1279'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1434' calendar-time='03:00:00-15:00:00 calendar-type='1434'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1465' calendar-time='15:00:00-03:00:00 calendar-type='1465'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        On
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        23
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1249' calendar-time='02:00:00-08:00:00 calendar-type='1249'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1404' calendar-time='09:00:00-03:00:00 calendar-type='1404'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1435' calendar-time='03:00:00-18:00:00 calendar-type='1435'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1466' calendar-time='18:00:00-05:00:00 calendar-type='1466'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        To
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        24
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1250' calendar-time='04:00:00-15:00:00 calendar-type='1250'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1405' calendar-time='13:00:00-15:00:00 calendar-type='1405'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1436' calendar-time='05:00:00-17:00:00 calendar-type='1436'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1467' calendar-time='17:00:00-05:00:00 calendar-type='1467'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Fr
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        25
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1251' calendar-time='04:00:00-16:00:00 calendar-type='1251'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1406' calendar-time='16:00:00-03:00:00 calendar-type='1406'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1437' calendar-time='05:00:00-17:00:00 calendar-type='1437'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1468' calendar-time='17:00:00-03:00:00 calendar-type='1468'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        L&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        26
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1252' calendar-time='03:00:00-03:00:00 calendar-type='1252'>
+                                        Peder
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1407' calendar-time='15:00:00-03:00:00 calendar-type='1407'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1438' calendar-time='03:00:00-15:00:00 calendar-type='1438'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1469' calendar-time='15:00:00-03:00:00 calendar-type='1469'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        S&ouml;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        27
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1253' calendar-time='04:00:00-16:00:00 calendar-type='1253'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1408' calendar-time='16:00:00-04:00:00 calendar-type='1408'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1439' calendar-time='03:00:00-15:00:00 calendar-type='1439'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1470' calendar-time='15:00:00-03:00:00 calendar-type='1470'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        M&aring;
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        28
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1254' calendar-time='03:00:00-00:00:00 calendar-type='1254'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1409' calendar-time='17:00:00-04:00:00 calendar-type='1409'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1440' calendar-time='03:00:00-15:00:00 calendar-type='1440'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1471' calendar-time='15:00:00-03:00:00 calendar-type='1471'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        Ti
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        29
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1255' calendar-time='03:00:00-12:00:00 calendar-type='1255'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1410' calendar-time='15:00:00-03:00:00 calendar-type='1410'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1441' calendar-time='03:00:00-15:00:00 calendar-type='1441'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1472' calendar-time='15:00:00-03:00:00 calendar-type='1472'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        On
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        30
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1256' calendar-time='02:00:00-08:00:00 calendar-type='1256'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1411' calendar-time='09:00:00-03:00:00 calendar-type='1411'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1442' calendar-time='03:00:00-18:00:00 calendar-type='1442'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1473' calendar-time='18:00:00-05:00:00 calendar-type='1473'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                                <div class='cal-form-row'>
+                                    <div class='cal-date_name-field left'>
+                                        To
+
+                                    </div>
+                                    <div class='cal-date_name-field left'>
+                                        31
+                                    </div>
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1257' calendar-time='04:00:00-15:00:00 calendar-type='1257'>
+                                        Jerry
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1412' calendar-time='13:00:00-15:00:00 calendar-type='1412'>
+                                        Adam
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1443' calendar-time='05:00:00-17:00:00 calendar-type='1443'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                    <div class='calendarpost pass' data-tooltip='tip1'  calendar-id='1474' calendar-time='17:00:00-05:00:00 calendar-type='1474'>
+                                        -----
+                                    </div><!-- efter pass -->
+                                </div><!--efter row-->
+                            </div><!-- #calendar -->
+                        </div><!-- .form_row -->
+                    </div> <!-- content -->
+                    <footer id='footer'>
+                        <div class='left sitefooter'>
+
+                            <a  href='http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance'>Unicorn</a>
+                            | 
+                            <a href='https://github.com/kerrik/ooophp'>tango på GitHub</a>
+
+                        </div>
+
+                        <div class='sitefooter left'>
+
+                            &copy;Peder Nordenstad 
+                            <a href='mailto:peder@nordenstad.se'>(peder@nordenstad.se)</a>
+
+                        </div>
+
+                        <div class='right sitefooter'>
+
+                            <form method=post>
+                                <input type="submit" value="Logout" name= "logout" id='logout' />
+                            </form>
+                        </div>
+                    </footer>
+                </div><!-- main -->
+            </div> <!-- wrapper -->
+    </body>
+</html>
