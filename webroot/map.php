@@ -1,2 +1,0 @@
-<?php
-header ("Location:https://www.google.se/maps/dir//SVIN%C3%85KER,+ORN%C3%96,+130+55+Orn%C3%B6/@59.1009679,18.499898,12z/data=!4m13!1m4!3m3!1s0x46f585c19d55723b:0x60a57ddeef5bc121!2zU1ZJTsOFS0VSLCAxMzAgNTUgT3Juw7Y!3b1!4m7!1m0!1m5!1m1!1s0x46f585c19d55723b:0x60a57ddeef5bc121!2m2!1d18.4586724!2d59.1061315");
